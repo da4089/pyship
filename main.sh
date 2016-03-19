@@ -27,7 +27,6 @@ DEP_TARGET=$1
 set -u
 
 
-<<OK
 #########################
 # Setup build directory #
 #########################
@@ -78,7 +77,6 @@ rm -rf "$DIST_DIR/virtualenv/.git"
 cd "$DIST_DIR/.."
 tar -zcvf "$DIST_TARGZ" "$(basename "$DIST_DIR")"
 
-OK
 
 #####################################################
 # Tell the user how his fortunes have just improved #
