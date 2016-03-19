@@ -18,7 +18,7 @@ Curretly only OSX is supported.
 2. ```./main.sh 10.10```
 
 ## invoking the python shell
-0. ```./build/pyship/python2.7/usr/local/bin/python```
+```./build/pyship/python2.7/usr/local/bin/python```
 
 ## what dependencies does it actually have?
 ```
