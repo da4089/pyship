@@ -18,9 +18,9 @@ Curretly only OSX is supported.
 2. ```./main.sh 10.10```
 
 ## invoking the python shell
-```./build/pyship/python2.7/usr/local/bin/python```
++ ```./build/pyship/python2.7/usr/local/bin/python```
 
-## what dependencies does it actually have?
+## dependencies?
 ```
 $ find build/pyship/python2.7/ | xargs otool -L 2>/dev/null | \
   grep -Ev "(is not an object file|Invalid argument|build/pyship)" | \
