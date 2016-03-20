@@ -3,7 +3,7 @@ pyship creates a python 2.7 binary that can be bundled with python scripts.  Thi
 python scripts a native application feel.  Other attempts at creating a similar effect include
 programs like py2exe and cx_Freeze.
 
-Curretly only OSX is supported.
+Currently only OSX is supported.
 
 ## pre-requisites
 0. Install ActiveState Tcl/Tk 8.5
