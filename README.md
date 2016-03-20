@@ -19,7 +19,39 @@ Curretly only OSX is supported.
 2. ```./main.sh 10.10```
 
 ## invoking the python shell
-+ ```./build/pyship/python2.7/usr/local/bin/python```
+```
+$ ./build/pyship/python2.7/usr/local/bin/python
+Python 2.7.11+ (default, Mar 19 2016, 18:11:56) 
+[GCC 4.2.1 Compatible Apple LLVM 7.0.2 (clang-700.1.81)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import _ssl # ssl works!
+>>> print "Hello World"
+Hello World
+>>> exit()
+```
+
+## setting up a virtualenv
+```
+$ ./build/pyship/python2.7/usr/local/bin/python ./build/pyship/virtualenv/virtualenv.py abc
+New python executable in /Users/burr0ws/code/pyship/abc/bin/python
+Installing setuptools, pip, wheel...done.
+$ ./abc/bin/pip install requests
+Collecting requests
+  Using cached requests-2.9.1-py2.py3-none-any.whl
+Installing collected packages: requests
+Successfully installed requests-2.9.1
+Box:pyship burr0ws$ ./abc/bin/python
+Python 2.7.11+ (default, Mar 19 2016, 18:11:56) 
+[GCC 4.2.1 Compatible Apple LLVM 7.0.2 (clang-700.1.81)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import requests
+>>> r = requests.get('http://google.com')
+>>> r.text
+u'<!doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="en"><head><meta
+content="Search the world\'s information, including webpages, images, videos and more. Google
+has many special features to help you find exactly what you\'re looking for." name="description">...
+>>> exit()
+```
 
 ## dependencies?
 ```
