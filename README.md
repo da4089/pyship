@@ -7,10 +7,11 @@ Curretly only OSX is supported.
 
 ## pre-requisites
 0. Install ActiveState Tcl/Tk 8.5
-4. ```sudo ln -s /usr/bin/clang /usr/bin/cc```
-5. ```sudo ln -s /usr/local/bin/hg /usr/bin/hg```
-7. ```sudo ln -s /Library/Frameworks/Tk.framework/ $(xcrun --show-sdk-path)/Library/Frameworks/```
-8. ```sudo ln -s /Library/Frameworks/Tcl.framework/ $(xcrun --show-sdk-path)/Library/Frameworks/```
+1. Install Xcode SDK
+2. ```sudo ln -s /usr/bin/clang /usr/bin/cc```
+3. ```sudo ln -s /usr/local/bin/hg /usr/bin/hg```
+4. ```sudo ln -s /Library/Frameworks/Tk.framework/ $(xcrun --show-sdk-path)/Library/Frameworks/```
+5. ```sudo ln -s /Library/Frameworks/Tcl.framework/ $(xcrun --show-sdk-path)/Library/Frameworks/```
 
 ## creating a binary
 0. ```git clone https://github.com/burrows-labs/pyship.git```
